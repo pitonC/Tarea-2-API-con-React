@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.App-logo {
+  height: 18vmin;
+  pointer-events: none;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f2330 0%, #0b3948 60%);
+  color: #eaf6ff;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.App-header {
+  background: linear-gradient(90deg, rgba(30,60,80,0.95), rgba(16,50,70,0.9));
+  min-height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaf6ff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.App-link {
+  color: #7fd6ff;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Buscador{
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+.Search-card {
+  width: 90%;
+  max-width: 980px;
+  margin: 0.6rem auto 1rem auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(3,11,18,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.Lista{
+  display: flex;
+  flex-direction: column;
+}
+
+.Lista-contenido{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Lista-pelicula{
+  margin: 1vw;
+  width: 30vw;
+}
+
+.Profile-card {
+  width: 90%;
+  max-width: 980px;
+  margin: 1.2rem auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  color: #f0fbff;
+  box-shadow: 0 10px 30px rgba(2,10,20,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.Profile-inner {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(2,10,20,0.6);
+}
+
+.Profile-info h2 {
+  margin: 0 0 0.3rem 0;
+}
+
+.Games-card {
+  width: 90%;
+  max-width: 980px;
+  margin: 1.2rem auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  color: #e9fbff;
+  box-shadow: 0 8px 24px rgba(2,10,20,0.55);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.Games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.Games-item {
+  background: rgba(0,0,0,0.12);
+  padding: 0.8rem 0.9rem;
+  border-radius: 8px;
+}
+
+/* Buttons green theme */
+.btn-success {
+  background: linear-gradient(180deg,#86c26b,#6aa84f);
+  border-color: rgba(0,0,0,0.15);
+  color: #05310a;
+  font-weight: 700;
+}
+.btn-success:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+.btn-outline-success {
+  color: #c8f0bf;
+  border-color: rgba(200,240,191,0.15);
+}
+
+/* Main container and page layout */
+.Main-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0.8rem auto 2rem auto;
+  text-align: left;
+}
+
+.Main-container h1 {
+  color: #e6f7ff;
+  margin: 0.6rem 0 0.2rem 0;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.8);
+  margin-top: 0;
+}
+
+.section-title {
+  margin-top: 1.2rem;
+  color: #cfeefc;
+}
+
+.section-sep {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 1rem 0 1.2rem 0;
+}
+
+.error-box {
+  background: linear-gradient(90deg, rgba(255,80,80,0.08), rgba(200,40,40,0.06));
+  color: #ffdede;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,80,80,0.08);
+}
+
+.loading-box {
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  color: #e9fbff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* profile specific */
+.Profile-card { border-left: 6px solid rgba(255,255,255,0.06); }
+.Profile-avatar-wrap { padding: 8px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+.Profile-info p.muted { color: rgba(255,255,255,0.75); margin: 0.2rem 0; }
+.status-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; }
+
+/* game list tweaks */
+.game-name { font-weight: 600; }
+.game-hours { float: right; color: rgba(255,255,255,0.75); }
+
+/* spacing and nicer cards */
+.Profile-card {
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.Games-card {
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.Main-container {
+  padding-bottom: 2rem;
+}
+
+.private-box {
+  background: rgba(255,255,255,0.02);
+  color: #dfefff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+}
+
+.private-badge {
+  display: inline-block;
+  background: rgba(0,0,0,0.15);
+  color: #ffd9d9;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+
+/* Header inner layout */
+.Header-inner { display: flex; align-items: center; gap: 1rem; width: 90%; max-width: 1200px; margin: 0 auto; }
+.App-logo { height: 110px; width: 110px; margin-left: 8px; }
+.Header-text h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.6px; }
+.Header-sub { margin: 0; color: rgba(255,255,255,0.75); font-size: 0.95rem; }
+.App-header { justify-content: flex-start; padding: 18px 0; }
+
+/* Make example buttons look nicer */
+.btn-outline-success { border-radius: 999px; padding: 0.45rem 0.9rem; }
+.btn-outline-success:hover { background: rgba(255,255,255,0.02); }
+
+/* small responsive tweaks */
+@media (max-width: 720px) {
+  .Header-inner { flex-direction: column; gap: 0.4rem; padding: 0.6rem 0; }
+  .App-logo { height: 54px; width: 54px; }
+  .Profile-avatar { width: 110px; height: 110px; }
+}
